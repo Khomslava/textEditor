@@ -1,0 +1,8 @@
+<div class="synonyms-wrapper">
+  <h3 class="title">Synonyms</h3>
+  <div *ngIf="!synonyms || synonyms.length === 0" class="no-synonyms">No synonyms</div>
+  <div class="synonyms">
+    <div *ngFor="let synonym of synonyms" class="synonym">{{synonym.word}}</div>
+  </div>
+</div>
+

@@ -1,0 +1,33 @@
+
+.synonyms-wrapper {
+  display: column;
+  height: 100px;
+  width: 600px;
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.synonyms {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.synonym {
+    border: 1px solid lightgrey;
+    padding: 5px 15px;
+    margin-right: 12px;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+.title {
+    margin: 2px auto;
+}
+
+.no-synonyms {
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+

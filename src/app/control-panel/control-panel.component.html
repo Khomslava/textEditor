@@ -1,5 +1,6 @@
 <div class="format-actions">
-  <button class="format-action" type="button"><b>B</b></button>
-  <button class="format-action" type="button"><i>I</i></button>
-  <button class="format-action" type="button"><u>U</u></button>
+  <button #btn *ngFor="let button of buttonsData; let i=index" class="format-action" [id]="button.id" (click)="formatText(button.mode, i)" readonly
+    (mousedown)="$event.preventDefault()" [ngClass]="{'active': button.state }">
+    {{button.title}}
+  </button>
 </div>

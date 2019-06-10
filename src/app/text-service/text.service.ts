@@ -1,7 +1,10 @@
 import { Injectable } from '@angular/core';
+import { ReplaySubject } from 'rxjs';
 
 @Injectable()
 export class TextService {
+  selectedWord = new ReplaySubject<string>(1);
+
   getMockText() {
     return new Promise<string>(function (resolve) {
       resolve('A year ago I was in the audience at a gathering of designers in San Francisco. ' +

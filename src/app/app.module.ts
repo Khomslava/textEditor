@@ -5,8 +5,10 @@ import { FileComponent } from './file/file.component';
 import { ControlPanelComponent } from './control-panel/control-panel.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { TextService } from './text-service/text.service';
 import { FooterComponent } from './footer/footer.component';
+import { SynonymsComponent } from './synonyms/synonyms.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { FooterComponent } from './footer/footer.component';
     FileComponent,
     ControlPanelComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SynonymsComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     TextService
